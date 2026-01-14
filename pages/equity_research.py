@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import yfinance as yf
 
-from utils import get_ticker_data, chart_analyst_targets
+from utils import get_ticker_data
 from pandas.tseries.offsets import DateOffset
 
 ##############################################################################
