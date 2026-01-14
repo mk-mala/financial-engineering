@@ -1,6 +1,13 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+# Page Configuration
+st.set_page_config(page_title="Financial Engineering", layout="wide")
+
+# Define each page
+home = st.Page("pages/home.py", title="Home", icon=":material/home:")
+
+# Create the navigation menu
+pg = st.navigation([home])
+
+# Run the selected page
+pg.run()
